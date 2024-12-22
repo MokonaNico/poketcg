@@ -36,7 +36,7 @@ DisplayPlayerNamingScreen:
 
 .default_name
 	; "MARK": default player name.
-	textfw "MARK"
+	textfw "MINT"
 	db TX_END, TX_END, TX_END, TX_END
 
 Unknown_128f7:

@@ -1385,9 +1385,9 @@ Palette119::
 	db 0
 	db 1
 
-	rgb 28, 28, 24
-	rgb 28, 16, 12
-	rgb 28,  4,  8
+	rgb 31, 29, 25
+	rgb 28, 17, 14
+	rgb  0, 14, 31
 	rgb  0,  0,  8
 
 SECTION "Anims 4", ROMX
