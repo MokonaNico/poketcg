@@ -325,9 +325,20 @@ Script_EnterLabFirstTime:
 	move_player NORTH, 2
 	print_npc_text Text05e3
 	close_advanced_text_box
+
+    ; SKIP INTRO (text UnusedText000b : skip?)
+	print_npc_text UnusedText000b
+	ask_question_jump_default_yes NULL, .ows_skip
 	set_next_npc_and_script NPC_SAM, .ows_d779
 	end_script
 	ret
+
+.ows_skip
+	set_event EVENT_MASON_LAB_STATE, MASON_LAB_RECEIVED_STARTER_DECK
+	choose_starter_deck
+	give_stater_deck
+	save_game 0
+	quit_script_fully
 
 .ows_d779
 	start_script
