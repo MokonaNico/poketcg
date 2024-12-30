@@ -1928,10 +1928,10 @@ ScriptCommand_JumpIfEventZero:
 ScriptCommand_GiveAll:
 	ld a, 0
 loop:
-	inc a
 	push af
 	call AddCardToCollection
 	pop af
+	inc a
 	cp a, $e5
 	jr nz, loop
 	jp IncreaseScriptPointerBy1
