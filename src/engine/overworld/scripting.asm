@@ -1926,7 +1926,7 @@ ScriptCommand_JumpIfEventZero:
 	jp IncreaseScriptPointerBy4
 
 ScriptCommand_GiveAll:
-	ld a, 0
+	ld a, 1
 loop:
 	push af
 	call AddCardToCollection
