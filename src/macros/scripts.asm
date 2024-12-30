@@ -109,6 +109,7 @@ ENDM
 	const ScriptCommand_EndScript8_index                                     ; $65
 	const ScriptCommand_EndScript9_index                                     ; $66
 	const ScriptCommand_EndScript10_index                                    ; $67
+	const ScriptCommand_GiveAll_index                                        ; $68
 
 DEF NUM_SCRIPT_COMMANDS EQU const_value
 
@@ -460,6 +461,10 @@ ENDM
 ; Closes Advanced TextBoxes then Ends Script Loop
 MACRO quit_script_fully
 	run_command ScriptCommand_QuitScriptFully
+ENDM
+
+MACRO give_all
+    run_command ScriptCommand_GiveAll
 ENDM
 
 ; Replaces map blocks

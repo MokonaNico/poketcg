@@ -110,13 +110,21 @@ EnergyCardList:
 Script_Tech2:
 	start_script
 	test_if_event_false EVENT_RECEIVED_LEGENDARY_CARDS
-	print_variable_npc_text Tech2LegendaryCardsExplanationText, Tech2LegendaryCardsCongratsText
+	print_npc_text Tech2LegendaryCardsExplanationText
+	ask_question_jump_default_yes NULL, Script_Tech2_yes
+	quit_script_fully
+Script_Tech2_yes:
+	give_booster_packs BOOSTER_ENERGY_RANDOM, NO_BOOSTER, NO_BOOSTER
 	quit_script_fully
 
 Script_Tech3:
 	start_script
 	test_if_event_false EVENT_RECEIVED_LEGENDARY_CARDS
-	print_variable_npc_text Tech3BoosterPackExplanationText, Tech3LegendaryCardsCongratsText
+	print_npc_text Tech3BoosterPackExplanationText
+	ask_question_jump_default_yes NULL, Script_Tech3_yes
+	quit_script_fully
+Script_Tech3_yes:
+	give_all
 	quit_script_fully
 
 Script_Tech4:

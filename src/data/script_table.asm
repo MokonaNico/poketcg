@@ -104,4 +104,5 @@ OverworldScriptTable::
 	dw ScriptCommand_EndScript
 	dw ScriptCommand_EndScript
 	dw ScriptCommand_EndScript
+	dw ScriptCommand_GiveAll
 	assert_table_length NUM_SCRIPT_COMMANDS

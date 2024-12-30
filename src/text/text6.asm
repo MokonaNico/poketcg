@@ -979,16 +979,9 @@ Tech1GoodbyeText:
 	done
 
 Tech2LegendaryCardsExplanationText:
-	text "Are you also hoping to inherit"
-	line "the Legendary Pokémon Cards?"
-	line "If you want the Legendary Cards,"
-	line "you must defeat the Grand Masters."
-	line "To duel the Grand Masters, you"
-	line "must first get the Master Medals."
-	line "The 8 Masters of the Card Clubs"
-	line "each have a Master Medal. Go to"
-	line "Pokémon Dome if you want to learn"
-	line "more about the Legendary Cards."
+	text "Hello <RAMNAME>, I can give"
+	line "you a free booster."
+	line "do you want one ?"
 	done
 
 Tech2LegendaryCardsCongratsText:
@@ -999,14 +992,9 @@ Tech2LegendaryCardsCongratsText:
 	done
 
 Tech3BoosterPackExplanationText:
-	text "When you defeat a Club Member,"
-	line "you'll receive a Booster Pack."
-	line "Each Booster Pack has 10 cards."
-	line "The cards differ depending on"
-	line "the Booster Pack you receive. "
-	line "The type of Booster Pack differs"
-	line "depending on who you duel, "
-	line "so choose your opponents well."
+	text "Hello <RAMNAME>, I can give"
+	line "you all the cards."
+	line "Do you want them ?"
 	done
 
 Tech3LegendaryCardsCongratsText:

@@ -1925,6 +1925,17 @@ ScriptCommand_JumpIfEventZero:
 .no_jump
 	jp IncreaseScriptPointerBy4
 
+ScriptCommand_GiveAll:
+	ld a, 0
+loop:
+	inc a
+	push af
+	call AddCardToCollection
+	pop af
+	cp a, $e5
+	jr nz, loop
+	jp IncreaseScriptPointerBy1
+
 ScriptCommand_JumpIfEventNonzero:
 	ld a, c
 	call GetEventValue
